@@ -17,14 +17,14 @@ whython is basically just a wrapper for Pyodide.
 Using whython is simple:
 
 ```html
-<script src="https://ewpratten.retrylife.ca/whython/static/js/whthon.js"></script>
+<script src="https://ewpratten.retrylife.ca/whython/static/js/whython.js"></script>
 <script type="application/python">
 import sys
 print(sys.version)
 </script>
 
 <!-- Or -->
-<script src="https://ewpratten.retrylife.ca/whython/static/js/whthon.js"></script>
+<script src="https://ewpratten.retrylife.ca/whython/static/js/whython.js"></script>
 <script type="application/python" src="/path/to/script.py"></script>
 ```
 
