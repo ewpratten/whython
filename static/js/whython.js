@@ -8,6 +8,7 @@ function injectPyodide() {
 }
 injectPyodide();
 
+// Search for python scripts, and execute them
 function run() {
     // Get all scripts
     var scripts = document.getElementsByTagName("script");
@@ -26,6 +27,7 @@ function run() {
     python_scripts.forEach(evalScript);
 }
 
+// Evaluates a script, and correctly loads it
 function evalScript(script) {
     // Handle remote script
     if (script.src != "") {
@@ -42,6 +44,7 @@ function evalScript(script) {
     }
 }
 
+// Open a python scope, and execute code
 function evalRawPythonCode(text) {
     languagePluginLoader.then(() => {
         console.log(pyodide.runPython(text));
